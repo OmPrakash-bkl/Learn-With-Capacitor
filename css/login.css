@@ -1,1 +1,140 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html {
+    font-size: 16px;
+}
+body {
+    font-family:Arial, Helvetica, sans-serif;
+}
 
+#zceppa_header_background {
+background:linear-gradient(to right, rgb(0, 202, 202), rgb(198, 255, 255));
+height: auto;
+width: 100%;
+padding-bottom: 10.3rem;
+}
+#zceppa_header {
+    height: 7rem;
+    width: 100%;
+    clear: both;
+}
+#zceppa_logo_div {
+    float: left;
+    margin: 0rem 1rem 0rem 7.5rem;
+}
+#logo_img {
+    height: 5.5rem;
+    width: 7.5rem;
+}
+#zceppa_nav_left_links {
+    float: left;
+    margin-left: 2rem;
+}
+#zceppa_nav_left_links ul li {
+display: inline-block;
+margin: 2.5rem 1rem;
+font-size: 1.3rem;
+font-weight: bold;
+color: rgb(248, 248, 248);
+cursor: pointer;
+}
+.nav_links {
+    color: rgb(248, 248, 248);
+    text-decoration: none;
+}
+#zceppa_nav_right_links {
+    float: right;
+    margin-right: 6rem;
+} 
+#zceppa_nav_right_links ul li {
+display: inline-block;
+margin: 2.5rem 2rem 2.5rem 0rem;
+font-size: 1.3rem;
+font-weight: bold;
+}
+
+#zceppa_nav_right_links ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0, 0.8);
+    opacity: 0.8;
+}
+#signup_btn a {
+    
+    border: 1px solid #343a40;
+    border-radius: 1.5rem;
+    font-size: 1rem;
+    padding: 0.8rem 1.1rem;
+
+}
+#signup_btn a:hover {
+    background-color:#6f42c1;
+    color: rgb(248, 248, 248);
+    transition: 0.3s;
+}
+
+#signup_container {
+    height: auto;
+    width: 60%;
+    border: 0.1rem solid gainsboro;
+    margin: 3.5rem auto 1.0rem auto;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0rem 0rem 1.3rem rgb(170, 170, 170);
+}
+#signup_container h1 {
+    margin: 1.4rem 0px 0rem 0rem;
+    text-align: center;
+    color: rgb(0, 0, 0, 0.8);
+    font-size: 1.7rem;
+    opacity: 0.8;
+}
+#signup_form_container {
+    
+    width: 96%;
+    margin: 0rem 1rem;
+    padding: 0.5rem;
+}
+#signup_form_container input {
+    height: 2.5rem;
+    margin: 0.5rem 0rem;
+    padding: 0rem 0.5rem;
+    border: 0.1rem solid gainsboro;
+    border-radius: 0.2rem;
+    color: rgb(97, 97, 97);
+  font-size: 0.9rem;
+}
+#signup_form_container input:focus {
+    outline: 0.2rem solid rgba(161, 236, 236, 0.8);
+}
+
+.for_inputbox_size {
+    height: 2rem;
+    width: 48%;
+}
+
+#for_company_inputbox {
+    height: 2rem;
+    width: 100%;
+  
+}
+.input_for_left_align {
+float: left;
+}
+.input_for_right_align {
+    float: right;
+}
+#btn_of_form {
+    color: rgb(248, 248, 248);
+    background-color: rgb(0, 202, 202);
+    padding: 0.7rem 4rem;
+    border: 0px;
+    border-radius: 1.5rem;
+    font-weight: bold;
+    font-size: 1.0rem;
+    margin: 0.8rem 38%;
+    cursor: pointer;
+    outline: none;
+}
