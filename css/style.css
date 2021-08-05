@@ -26,8 +26,8 @@ body {
     width: 100%;
     border: 0rem;
     border-radius: 0 0 50% 50% / 0 0 100% 100%;
-    background: linear-gradient(to right, rgb(0, 202, 202) 30%, rgb(198, 255, 255) 70%);
-    transform: scaleX(2);
+    background: linear-gradient(to right, rgb(0, 202, 202) 10%, rgb(198, 255, 255) 65%);
+    transform: scaleX(3);
 }
 #nav_container {
     display: flex;
