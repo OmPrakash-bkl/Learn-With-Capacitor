@@ -1,1 +1,240 @@
+* {
+margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+}
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+#header {
+    height: 42rem;
+    width: 100%;
+   
+    overflow: hidden;
+    position: relative;
+}
+#header::before {
+    content: "";
+    position: absolute;
+    top:0rem;
+    left: 0rem;
+    height: 40rem;
+    width: 100%;
+    border: 0rem;
+    border-radius: 0 0 50% 50% / 0 0 100% 100%;
+    background: linear-gradient(to right, rgb(0, 202, 202) 30%, rgb(198, 255, 255) 70%);
+    transform: scaleX(2);
+}
+#nav_container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 6rem;
+   
+    justify-content:center;
+    padding: 0.5rem 0rem;
+    z-index: 1;
+    position:fixed;
+}
+.color {
+    background-color: transparent;
 
+}
+.white {
+    background-color: white;
+    
+}
+
+#popup_navbar {
+  
+    width: 100%;
+    background-color: white;
+    position: relative;
+    top: -12rem;
+    z-index: 3;
+    
+}
+
+
+#nav_container::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+
+.inner_con_one {
+    width: 12%;
+}
+#small_logo_container img {
+    width: 6rem;
+    height: 5rem;
+    display: none;
+} 
+
+#logo {
+    height: 5rem;
+    width: 8rem;
+    float: right;
+}
+.inner_con_two {
+    width: 56%;
+  
+}
+.inner_con_three {
+    width: 20%;
+   
+}
+.inner_con_two ul {
+    margin-left: 2rem;
+}
+.inner_con_two ul li {
+    list-style-type: none;
+    color:rgb(248, 248, 248);
+    font-weight: bold;
+    display: inline-block;
+    font-size: 1.1rem;
+    margin: 1.2rem 1rem;
+    cursor: pointer;
+}
+.inner_con_two ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.inner_con_three ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 1.3rem 0rem 1.3rem 1.8rem;
+}
+.inner_con_three ul li a {
+    color: rgb(0, 0, 0, 0.8);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    
+}
+#signup_btn {
+font-weight: normal;
+font-size: 1rem;
+border: 1px solid #343a40;
+border-radius: 1.5rem;
+padding: 0.8rem 1.1rem;
+}
+#signup_btn:hover {
+    background-color:#6f42c1;
+    color: rgb(248, 248, 248);
+    transition: 0.3s;
+}
+#burger_btn {
+    display: none;
+    margin: 1.3rem 0rem 1.3rem 1.8rem;
+}
+
+#popup_navbar ul li {
+    list-style-type: none;
+    color: rgb(248, 248, 248);
+   font-size: 1.2rem;
+   font-weight: bold;
+   margin: 0rem 0.5rem;
+   padding: 1rem 0rem;
+}
+
+#popup_navbar ul li a {
+    text-decoration: none;
+    color: rgba(78, 78, 78, 0.8);
+}
+
+/*Media query start*/
+
+@media only screen and (max-width: 1280px) {
+    .inner_con_one {
+        width: 12%;
+    }
+    .inner_con_two {
+        width: 52%;
+      
+    }
+    .inner_con_three {
+        width: 24%;
+       
+    }
+}
+@media only screen and (max-width: 1199px) {
+
+    #signup_btn {
+        display: none;
+    }
+    .inner_con_one {
+        width: 15%;
+    }
+    
+} 
+@media only screen and (max-width: 1000px) {
+    .inner_con_two {
+        display: none;
+    }
+    .inner_con_one {
+        width: 30%;
+    }
+    .inner_con_three {
+        width: 50%;
+    }
+    #signup_btn {
+        display: block;
+    }
+    .inner_con_three ul  {
+        float: right;
+    }
+    #logo {
+        display: none;
+    }
+    #small_logo_container img {
+        display: inline-block;
+        height: 4rem;
+        width: 5rem;
+    }
+    
+    .inner_con_three ul li {
+        margin: 1rem 0rem 1rem 0.8rem;
+    }
+    
+    #burger_btn {
+        display: inline-block;  
+        margin: 0rem;
+    }
+} 
+
+
+
+@media only screen and (max-width: 800px) {
+    #signup_btn {
+        display: none;
+    }
+    .nav_right_links {
+        margin: 0rem;
+    }
+    .inner_con_three ul li a {
+        font-size: 1.5rem;
+    }
+    #burger_btn {
+        margin: 0rem;
+    }
+} 
+
+@media only screen and (max-width: 600px) {
+    .inner_con_three ul li {
+        margin: 1rem 0rem;
+    }
+    .nav_right_links a {
+        display: none;
+    }
+}
+
+/*Media query end*/
