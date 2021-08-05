@@ -11,11 +11,16 @@ body {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 #header {
-    height: 42rem;
-    width: 100%;
    
+    width: 100%;
+   height: 40rem;
     overflow: hidden;
     position: relative;
+    background-image: url("../images/BusinessGrowth.svg");
+    background-repeat: no-repeat;
+    background-size: 50rem 30rem;
+    background-position: bottom right;
+   
 }
 #header::before {
     content: "";
@@ -26,8 +31,10 @@ body {
     width: 100%;
     border: 0rem;
     border-radius: 0 0 50% 50% / 0 0 100% 100%;
-    background: linear-gradient(to right, rgb(0, 202, 202) 10%, rgb(198, 255, 255) 65%);
+    background: linear-gradient(to right, rgb(0, 158, 158) 10%, rgb(198, 255, 255) 65%);
     transform: scaleX(3);
+    z-index: -1;
+   
 }
 #nav_container {
     display: flex;
@@ -150,6 +157,51 @@ padding: 0.8rem 1.1rem;
     text-decoration: none;
     color: rgba(78, 78, 78, 0.8);
 }
+#header::before {
+    height: 80rem;
+}
+
+
+
+#header_text_and_image_container {
+   height: 28rem;
+    width: 100%;
+   
+}
+#header_text_and_image_inner_container {
+   height: 28rem;
+    width: 40%;
+  
+    margin-left: 8%;
+    color: white;
+}
+#header_text_and_image_inner_container h1{
+   margin: 1rem 0rem;
+   line-height: 2.5rem;
+   font-size: 2.3rem;
+}
+
+#header_text_and_image_inner_container p{
+    margin: 1.5rem 0rem;
+    line-height: 1.8rem;
+    font-size: 1.3rem;
+ }
+ #know_text {
+     color: white;
+     text-decoration: none;
+     display: inline-block;
+ }
+
+#signup_second_btn button {
+    background-color: #6f42c1;
+    color: white;
+    border: 0rem;
+    border-radius: 2rem;
+    padding: 1rem 1rem;
+    font-size: 1.1rem;
+    margin: 1rem 1rem;
+    cursor: pointer;
+}
 
 /*Media query start*/
 
@@ -164,6 +216,19 @@ padding: 0.8rem 1.1rem;
     .inner_con_three {
         width: 24%;
        
+    }
+    #header_text_and_image_inner_container {
+        width: 100%;
+        margin: 0rem;
+        padding: 0rem 1rem;
+        text-align: center;
+    }
+    #header {
+        height: 70rem;
+        background-position: bottom center;
+    }
+    #header::before {
+        height: 70rem;
     }
 }
 @media only screen and (max-width: 1199px) {
@@ -226,6 +291,13 @@ padding: 0.8rem 1.1rem;
     #burger_btn {
         margin: 0rem;
     }
+    #header {
+        background-size: 40rem 30rem;
+        height: 70rem;
+    }
+    #header::before {
+        height: 70rem;
+    }
 } 
 
 @media only screen and (max-width: 600px) {
@@ -235,6 +307,30 @@ padding: 0.8rem 1.1rem;
     .nav_right_links a {
         display: none;
     }
+    #header {
+        background-size: 30rem 30rem;
+    }
+    #header_text_and_image_container, #header_text_and_image_inner_container {
+        height: 35rem;
+    }
 }
+
+@media only screen and (max-width: 400px) {
+  
+  
+    #header {
+        background-size: 20rem 30rem;
+        height: 84rem;
+    }
+    #header::before {
+        height: 84rem;
+    }
+    #header_text_and_image_container, #header_text_and_image_inner_container {
+        height: 50rem;
+    }
+   
+}
+
+
 
 /*Media query end*/
