@@ -9,6 +9,7 @@ html {
 }
 body {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    
 }
 #header {
    
@@ -18,20 +19,20 @@ body {
     position: relative;
     background-image: url("../images/BusinessGrowth.svg");
     background-repeat: no-repeat;
-    background-size: 50rem 30rem;
+    background-size: 50rem 38rem;
     background-position: bottom right;
    
 }
 #header::before {
     content: "";
     position: absolute;
-    top:0rem;
+    top:-40rem;
     left: 0rem;
     height: 40rem;
     width: 100%;
     border: 0rem;
     border-radius: 0 0 50% 50% / 0 0 100% 100%;
-    background: linear-gradient(to right, rgb(0, 158, 158) 10%, rgb(198, 255, 255) 65%);
+    background: linear-gradient(to right, rgb(0, 168, 168) 25%, rgb(198, 255, 255) 65%);
     transform: scaleX(3);
     z-index: -1;
    
@@ -66,7 +67,9 @@ body {
     z-index: 3;
     
 }
-
+.logoimg2 {
+    display: none;
+}
 
 #nav_container::after {
     content: "";
@@ -90,6 +93,13 @@ body {
     width: 8rem;
     float: right;
 }
+
+#logo1 {
+    height: 5rem;
+    width: 8rem;
+    float: right;
+}
+
 .inner_con_two {
     width: 56%;
   
@@ -112,9 +122,14 @@ body {
 }
 .inner_con_two ul li a {
     text-decoration: none;
-    color: white;
+    
 }
-
+.for_diff_color {
+color: white;
+}
+.active1 {
+    color: gray;
+}
 .inner_con_three ul li {
     list-style-type: none;
     display: inline-block;
@@ -176,14 +191,14 @@ padding: 0.8rem 1.1rem;
     color: white;
 }
 #header_text_and_image_inner_container h1{
-   margin: 1rem 0rem;
-   line-height: 2.5rem;
+   margin: -2rem 0rem 2rem 0rem;
+   line-height: 3rem;
    font-size: 2.3rem;
 }
 
 #header_text_and_image_inner_container p{
     margin: 1.5rem 0rem;
-    line-height: 1.8rem;
+    line-height: 2rem;
     font-size: 1.3rem;
  }
  #know_text {
@@ -201,6 +216,79 @@ padding: 0.8rem 1.1rem;
     font-size: 1.1rem;
     margin: 1rem 1rem;
     cursor: pointer;
+}
+
+.active {
+    background-color: white;
+    box-shadow: 0rem 0rem 0.3rem rgb(42, 42, 42);
+}
+#journey_container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10rem;
+}
+.journey_inner_div_one_of_two {
+  height: 34rem;
+    width: 50%;
+    background-image: url("../images/homepage-section1-1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    
+}
+.journey_inner_div_two_of_two {
+   
+    width: 35%;
+    padding-left: 2rem;
+    margin-bottom: 1rem;
+}
+.home_div_h2_style {
+    color: rgba(15, 15, 15, 0.8);
+    opacity: 0.8;
+    line-height: 2rem;
+    margin: 1rem 0rem 2rem 0rem;
+}
+
+.home_div_p2_style {
+    color: rgb(44, 44, 44);
+    opacity: 0.8;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    margin: 0.5rem 0rem;
+}
+.home_div_atag_style a {
+    color: #03C0C2;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#dg_interact_container {
+    padding: 6rem 0rem;
+    background-color: #F8F9FA;
+    margin: 10rem 0rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.dg_interact_inner_div_one_of_two {
+    width: 35%;
+    padding-left: 2rem;
+    margin-bottom: 1rem;
+}
+.dg_interact_inner_div_two_of_two {
+    height: 34rem;
+    width: 50%;
+    background-image: url("../images/homepage-section2-1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    padding: 1rem 0rem;
 }
 
 /*Media query start*/
@@ -228,6 +316,7 @@ padding: 0.8rem 1.1rem;
         background-position: bottom center;
     }
     #header::before {
+        top:0rem;
         height: 70rem;
     }
 }
@@ -239,7 +328,32 @@ padding: 0.8rem 1.1rem;
     .inner_con_one {
         width: 15%;
     }
-    
+    #journey_container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .journey_inner_div_one_of_two {
+        height: 25rem;
+        width: 90%;
+        background-position: center bottom;
+    }
+    .journey_inner_div_two_of_two {
+      
+        width: 90%;
+        padding:0rem 2rem;
+        text-align: center;
+    }
+
+    .dg_interact_inner_div_one_of_two {
+       width: 90%;
+       padding:0rem 2rem;
+       text-align: center;
+    }
+    .dg_interact_inner_div_two_of_two {
+        background-position: center top;
+      width: 90%;
+    }
 } 
 @media only screen and (max-width: 1000px) {
     .inner_con_two {
@@ -258,6 +372,9 @@ padding: 0.8rem 1.1rem;
         float: right;
     }
     #logo {
+        display: none;
+    }
+    #logo1 {
         display: none;
     }
     #small_logo_container img {
@@ -298,6 +415,10 @@ padding: 0.8rem 1.1rem;
     #header::before {
         height: 70rem;
     }
+    #journey_container {
+        flex-direction: column-reverse;
+     
+    }
 } 
 
 @media only screen and (max-width: 600px) {
@@ -313,6 +434,15 @@ padding: 0.8rem 1.1rem;
     #header_text_and_image_container, #header_text_and_image_inner_container {
         height: 35rem;
     }
+   
+    .journey_inner_div_one_of_two {
+        height: 20rem;
+    }
+    .dg_interact_inner_div_two_of_two {
+        background-position: center top;
+        height: 20rem;
+    }
+
 }
 
 @media only screen and (max-width: 400px) {
@@ -328,6 +458,14 @@ padding: 0.8rem 1.1rem;
     #header_text_and_image_container, #header_text_and_image_inner_container {
         height: 50rem;
     }
+    
+    .journey_inner_div_one_of_two {
+        height: 15rem;
+    }
+    .dg_interact_inner_div_two_of_two {
+        height: 15rem;
+    }
+    
    
 }
 
