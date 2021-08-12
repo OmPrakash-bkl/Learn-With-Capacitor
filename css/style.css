@@ -46,7 +46,7 @@ body {
    
     justify-content:center;
     padding: 0.5rem 0rem;
-    z-index: 1;
+    z-index: 5;
     position:fixed;
 }
 .color {
@@ -290,6 +290,234 @@ padding: 0.8rem 1.1rem;
     background-position: center;
     padding: 1rem 0rem;
 }
+#zceppa_to_grow_section {
+    width: 100%;
+    margin-bottom: 8rem;
+   
+}
+
+
+#zceppa_to_grow_section h1 {
+    color: rgb(44, 44, 44);
+    opacity: 0.8;
+    font-size: 2.2rem;
+    line-height: 2rem;
+    margin: 0.5rem 0rem 4rem 0rem;
+    text-align: center;
+}
+#inner_main_zceppa_to_grow_section {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.bussi_images {
+    height: 18rem;
+    width: 100%;
+}
+
+.inner_zceppa_to_grow_section {
+    width: 30%;
+}
+.inner_zceppa_to_grow_section h3 {
+    color: rgba(0, 0, 0, 0.8);
+    
+}
+.inner_zceppa_to_grow_section p {
+    color: rgba(53, 53, 53, 0.8);
+    font-size: 1.1rem;
+}
+
+#contact_form_container {
+    width: 100%;
+    margin-bottom: 8rem;
+}
+#inner_contact_form_container {
+  
+    width: 83%;
+    border: 0rem;
+    border-radius: 0.3rem;
+    margin: 0rem auto;
+    background:linear-gradient(to right, rgb(0, 204, 204), rgb(228, 255, 255));
+    text-align: center;
+    padding: 1rem 0rem 0.2rem 0rem;
+}
+#inner_contact_form_container h1 {
+    margin: 0rem auto 0.8rem auto;
+    color: white;
+    font-size: 2.5rem;
+}
+#inner_contact_form_container p {
+    margin: 0rem 3rem 0.5rem 3rem;
+    color: white;
+    font-size: 1.2rem;
+}
+#contact_form_input_container {
+ 
+    width: 65%;
+    background-color: white;
+    margin: 0.8rem auto;
+    border: 0px solid gainsboro;
+    border-radius: 0.3rem;
+    box-shadow: 0rem 0rem 0.4rem rgb(139, 139, 139);
+    padding-top: 1rem;
+}
+
+#fiver_input_fields_container {
+   
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0rem auto;
+}
+.input_fields_one, .input_fields_two {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+.input_fields_one div, .input_fields_two div {
+    width: 47%;
+}
+.input_fields_one input, .input_fields_two input {
+    height: 2.2rem;
+    width: 100%;
+    padding-left: 1rem;
+    margin: 0.8rem auto;
+    border: 1px solid gainsboro;
+    border-radius: 0.3rem;
+    color: rgb(80, 80, 80);
+    font-size: 0.9rem;
+}
+.inp_field:focus {
+    border: 0.18rem solid rgb(0, 194, 194);
+    transition: 0.3s;
+    outline: none;
+}
+#input_company_name {
+    width: 100%;
+}
+#input_company_name input {
+    height: 2.2rem;
+    width: 100%;
+    padding-left: 1rem;
+    margin: 0.8rem auto;
+    border: 1px solid gainsboro;
+    border-radius: 0.3rem;
+    color: rgb(80, 80, 80);
+    font-size: 0.9rem;
+}
+
+.inp1_field:focus {
+    border: none;
+    outline: 0.18rem solid rgb(0, 194, 194);
+    transition: 0.3s;
+    
+}
+
+#details_sub_btn {
+    border: 0rem;
+    background-color: #03C0C2;
+    padding: 0.8rem 4rem;
+    border-radius: 2rem;
+    color: white;
+    font-size: 1rem;
+    margin-bottom: 13%;
+    cursor: pointer;
+}
+
+#social_page_container {
+    width: 100%;
+    background-color: #F8F9FA;
+    margin-bottom: 8rem;
+    padding:7rem 0rem 5rem 0rem;
+}
+#social_page_container h1 {
+    text-align: center;
+    color: rgb(44, 44, 44);
+    opacity: 0.8; 
+    font-size: 2.5rem;
+}
+.inner_social_page_container_one {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    text-align: center;
+    margin-top: 3rem;
+    color: rgba(88, 88, 88, 0.8);
+    font-size: 1.1rem;
+}
+.inner_social_page_container_two {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    text-align: center;
+    margin:3rem 0rem;
+    color: rgba(88, 88, 88, 0.8);
+    font-size: 1.1rem;
+}
+.soci_images {
+    height: 7rem;
+    width: 7rem;
+    margin: 1rem 4rem;
+}
+
+#footer_section_container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#footer_section_container div {
+    margin: 0rem 4rem 1rem 4rem;
+}
+#footer_section_container h3 {
+    color: rgba(88, 88, 88, 0.8);
+}
+#footer_section_container p {
+    margin: 0.8rem 0rem 0rem 0rem;
+}
+#footer_section_container a {
+    color: rgba(88, 88, 88, 0.8);
+    font-size: 0.8rem;
+    text-decoration: none;
+}
+#for_code {
+    height: 0rem;
+    width: 80%;
+    border-bottom: 1px solid rgba(109, 109, 109, 0.8);
+}
+#privacy_div {
+    width: 80%;
+    margin: 0rem auto;
+    clear: both;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.foot_div_one {
+   color: rgba(88, 88, 88, 0.8);
+    float: left;
+    font-size: 0.8rem;
+}
+.foot_div_two li {
+list-style: none;
+float: right;
+margin: 1rem 0.5rem 0rem 0.5rem;
+}
+
 
 /*Media query start*/
 
@@ -354,6 +582,14 @@ padding: 0.8rem 1.1rem;
         background-position: center top;
       width: 90%;
     }
+    #inner_main_zceppa_to_grow_section {
+        flex-direction: column;
+        align-items: center;
+    }
+    .inner_zceppa_to_grow_section {
+        margin: 1.5rem 0rem;
+        width: 90%;
+    }
 } 
 @media only screen and (max-width: 1000px) {
     .inner_con_two {
@@ -391,6 +627,19 @@ padding: 0.8rem 1.1rem;
         display: inline-block;  
         margin: 0rem;
     }
+    #footer_section_container div {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+    #privacy_div {
+        justify-content: center;
+    }
+    .foot_div_one {
+        width: 100%;
+        text-align: center;
+    }
+
 } 
 
 
@@ -417,7 +666,15 @@ padding: 0.8rem 1.1rem;
     }
     #journey_container {
         flex-direction: column-reverse;
-     
+    }
+    .input_fields_one, .input_fields_two {
+        flex-direction: column;
+    }
+    .input_fields_one div, .input_fields_two div {
+        width: 100%;
+    }
+    #contact_form_input_container {
+        width: 90%;
     }
 } 
 
